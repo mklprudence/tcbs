@@ -1,0 +1,58 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.1.0'
+}
+apply plugin: 'eclipse'
+apply plugin: 'application'
+apply plugin: 'org.springframework.boot'
+
+mainClassName = 'com.mklprudence.tcbs.server.Server'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // https://mvnrepository.com/artifact/jakarta.websocket/jakarta.websocket-api
+    implementation 'jakarta.websocket:jakarta.websocket-api:2.1.0'
+    implementation 'jakarta.websocket:jakarta.websocket-client-api:2.1.0'
+
+    implementation 'org.springframework.boot:spring-boot-gradle-plugin:3.1.0'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket:3.1.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+/*
+gretty {
+    servletContainer = 'tomcat9'
+    contextPath = '/'
+}
+ */
+
+application {
+    mainClass = 'com.mklprudence.tcbs.server.Server'
+}
+
+/*
+springBoot {
+    mainClass = 'com.mklprudence.tcbs.server.Server'
+}
+ */
+
+group = 'com.mklprudence.tcbs'
+version = '1.0-SNAPSHOT'
+
+java {
+    archivesBaseName = 'TBCSServer'
+}
+
+test {
+    useJUnitPlatform()
+}

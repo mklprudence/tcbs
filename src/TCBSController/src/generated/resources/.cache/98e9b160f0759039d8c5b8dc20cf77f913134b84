@@ -1,0 +1,4 @@
+// 1.19.4	2023-06-19T01:40:30.0071632	TCBS Block Tags
+cacdac78b6dd9d1091365ea8fc5259b8ec551a81 data/minecraft/tags/blocks/mineable/pickaxe.json
+6d0dbc5d92de30b25aa5a9dbc694836ea431bcc3 data/minecraft/tags/blocks/needs_iron_tool.json
+76813c2ee201de564249dc5f53a51dd3b9d8fec7 data/minecraft/tags/blocks/needs_stone_tool.json

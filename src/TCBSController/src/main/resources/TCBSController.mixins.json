@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mklprudence.tcbs.tcbscontroller.TCBSController.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "TCBSController.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "jars": [
+
+    {
+      "identifier": {
+        "group": "org.glassfish.tyrus.bundles",
+        "artifact": "tyrus-standalone-client"
+      },
+      "version": {
+        "range": "[2.1.3,)",
+        "artifactVersion": "2.1.3"
+      },
+      "path": "META-INF/jarjar/tyrus-standalone-client-2.1.3.jar",
+      "isObfuscated": false
+    }
+  ]
+}
